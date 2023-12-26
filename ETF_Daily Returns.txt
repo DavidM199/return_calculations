@@ -1,0 +1,22 @@
+The .csv file has 20 rows and 2 columns and has information regarding the ticker symbol of 20 ETFs (Mostly traded north american corporate bond ETFs) and their focus (IG & HY).
+
+The task is as follow:
+
+1- Retrive the adjusted closed price data (2020-2023) for all ETFs using Yahoo Finance API.
+
+2- Calculate daily returns:
+
+	1- At each day-ETF observation, compute the ETF's daily returns for the next 20 days.
+		
+		
+		Note1: daily returns for the 20 days means 20 returns for each day.
+		e.g. :
+			 return1  = (adj_closed_price_{t+1}  - adj_closed_price_{t}    ) / adj_closed_price_{t}
+			 return2  = (adj_closed_price_{t+2}  - adj_closed_price_{t+1}  ) / adj_closed_price_{t+1}
+			 ...
+			 return20 = (adj_closed_price_{t+20} - adj_closed_price_{t+19} ) / adj_closed_price_{t + 19}
+		
+		Note2: Output can be any format that you like. I mention these as examples:
+		One way to do so is to create 20 columns and store return of each day in one of the columns.
+		Another way might to have a longer data.frame which have a columns named daa_return.	
+
