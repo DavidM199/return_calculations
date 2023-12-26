@@ -1,2 +1,2 @@
 # return_calculations
-In this repository I store my smaller projects with return calculations for bonds and ETFs. 
+In this repository I store my smaller project with return calculations for ETFs. 
